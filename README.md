@@ -18,11 +18,11 @@ Instalación de Symfony y creación de una API
 - symfony composer require api
 - composer require --dev symfony/profiler-pack
 - (Fíjate que en .env CORS_ALLOW_ORIGIN='^https?://(localhost|127\.0\.0\.1)(:[0-9]+)?$')
+- composer require symfony/orm-pack 
 - Descomento sqlite y comento postgressql en el .env
 - symfony console doctrine:database:create
 - symfony console doctrine:schema:create
 - Ruta: http://127.0.0.1:8000/api
-- composer require symfony/orm-pack 
 - composer require symfony/maker-bundle
 - composer require form validator twig-bundle security-csrf annotations
 - composer require symfony/maker-bundle
