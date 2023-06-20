@@ -7,7 +7,7 @@ Instalación de Symfony y creación de una API
 # Requisitos
 
 - Symfony CLI: https://symfony.com/download
-- PHP: PHP 8.2.3 (cli). Por ejemplo se puede descargar en OSX con: https://formulae.brew.sh/formula/php
+- PHP 8.2.3 (cli). Se puede descargar en OSX con: https://formulae.brew.sh/formula/php
 - Composer: https://getcomposer.org/download/
 
 
@@ -27,15 +27,17 @@ Instalación de Symfony y creación de una API
 - composer require form validator twig-bundle security-csrf annotations
 - composer require symfony/maker-bundle
 - Hacer entidad: php bin/console make:entity. Book y seleccionamos que con API:  Mark this class as an API Platform resource (expose a CRUD API for it)
+- Hacer CRUD php bin/console make:crud de Book
 - Añadir campos como: Autor, title (Fíjate en el entity. ¿Algo extraño?)
-- Ruta: http://127.0.0.1:8000/api
 - Poner en el config en api_plaform.ymal: metadata_backward_compatibility_layer: false
+- Ruta: http://127.0.0.1:8000/api
 
 # Rutas de la aplicación:
 
 | URL path                    | Description           | 
 | :--------------------------:|:---------------------:|
-| /api                   |  Api Doc  | 
+| /api                   |  Api Doc  |
+| /book                   |  Listado de libros  |  
 
 # Referencias
 
